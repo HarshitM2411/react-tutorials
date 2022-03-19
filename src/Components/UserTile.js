@@ -1,14 +1,10 @@
 import React from 'react';
 
-const containerDiv = {
-    
-}
-
 function UserTile(props) {
 
     return (
         <div className="container" onClick={()=>{props.removeUser(props.user.phone)}}>
-            <div style={containerDiv} className="card_container">
+            <div className="card_container">
                 <img src={props.user.picture.large} height="150px" width="150px" ></img>
                 <h3>{props.user.name.first +" "+ props.user.name.last}</h3>
                 <p>{props.user.age}</p>
